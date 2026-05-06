@@ -11,29 +11,19 @@ pip install simple-lama-inpainting
 ```
 
 ## Usage
-### CLI
+### 
 ```
-simple_lama <path_to_input_image> <path_to_mask_image> <path_to_output_image>
+运行remove_watermark_image.py，这个调用后会选择test中的测试图片做去水印
+```
+### 效果
+```
+原图：
+<img width="619" height="1200" alt="test_1" src="https://github.com/user-attachments/assets/490b96a2-0ae0-404a-9d20-0ac822bf7496" />
+去水印后图片：
+<img width="624" height="1200" alt="output_inpainted_image" src="https://github.com/user-attachments/assets/fe799777-c4b6-4f8b-ac16-c9295d4ed2fc" />
+
 ```
 
-### Integration to Your Code
-Input formats: `np.ndarray` or `PIL.Image.Image`. (3 channel input image & 1 channel binary mask image where pixels with 255 will be inpainted). \
-Output format: `PIL.Image.Image`
-```python
-from simple_lama_inpainting import SimpleLama
-from PIL import Image
-
-simple_lama = SimpleLama()
-
-img_path = "image.png"
-mask_path = "mask.png"
-
-image = Image.open(img_path)
-mask = Image.open(mask_path).convert('L')
-
-result = simple_lama(image, mask)
-result.save("inpainted.png")
-```
 
 ## Sources
 [1] Suvorov, R., Logacheva, E., Mashikhin, A., Remizova, A., Ashukha, A., Silvestrov, A., Kong, N., Goka, H., Park, K., & Lempitsky, V. (2021). Resolution-robust Large Mask Inpainting with Fourier Convolutions. arXiv preprint arXiv:2109.07161. \
