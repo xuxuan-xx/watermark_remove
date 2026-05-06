@@ -18,10 +18,9 @@ pip install simple-lama-inpainting
 ### 效果
 ```
 原图：
-<img width="619" height="1200" alt="test_1" src="https://github.com/user-attachments/assets/490b96a2-0ae0-404a-9d20-0ac822bf7496" />
+![效果对比](output_inpainted_image.jpg)
 去水印后图片：
-<img width="624" height="1200" alt="output_inpainted_image" src="https://github.com/user-attachments/assets/fe799777-c4b6-4f8b-ac16-c9295d4ed2fc" />
-
+![效果对比](tests/data_self/test_1.jpg)
 ```
 
 
