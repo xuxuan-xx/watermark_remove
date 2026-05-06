@@ -16,15 +16,9 @@ pip install simple-lama-inpainting
 运行remove_watermark_image.py，这个调用后会选择test中的测试图片做去水印
 ```
 ### 效果
-```
-原图：
-```
-![效果对比](output_inpainted_image.jpg)
-```
-去水印后图片：
-```
-![效果对比](tests/data_self/test_1.jpg)
-
+| 原图 | 去水印后 |
+|:---:|:---:|
+| ![原图](output_inpainted_image.jpg) | ![结果](tests/data_self/test_1.jpg) |
 
 
 ## Sources
